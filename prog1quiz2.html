@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Programming1 Quiz 2</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Georgia" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<!--creating the programming quiz 2 -->
+<h1 class="text" >LISTS : QUIZ 2</h1>
+<form id="quiz" name="Strings">
+    <div id="q1">
+        <p>1. What Will Be The Output Of The Following Code Snippet?<br>a=[1,2,3,4,5,6,7,8,9]]<br>
+            print(a[::2]) </p>
+        <label for="1a_lists"></label><input id = "1a_lists" type="radio" name="1Lists" value="a">[1,2]<br>
+        <label for="1b_lists"></label><input id = "1b_lists" type="radio" name="1Lists" value="b"> [8,9]<br>
+        <label for="1c_lists"></label><input id = "1c_lists" type="radio" name="1Lists" value="c"> [1,3,5,7,9]<br>
+        <label for="1d_lists"></label><input id = "1d_lists" type="radio" name="1Lists" value="d">[1,2,3]<br>
+    </div>
+
+    <div id="q2">
+        <p>2.  What Will Be The Output Of The Following Code Snippet<br>
+            a=[1,2,3,4,5,6,7,8,9]<br>
+            a[::2]=10,20,30,40,50,60<br>
+            print(a)</p>
+        <label for="2a"></label><input id = "2a" type="radio" name="Question1" value="a">ValueError: attempt to assign sequence of size 6 to extended slice of size 5<br>
+        <label for="2b"></label><input id = "2b" type="radio" name="Question1" value="b"> [10, 2, 20, 4, 30, 6, 40, 8, 50, 60]<br>
+        <label for="2c"></label><input id = "2c" type="radio" name="Question1" value="c"> [1, 2, 10, 20, 30, 40, 50, 60]<br>
+        <label for="2d"></label><input id = "2d" type="radio" name="Question1" value="d"> [1, 10, 3, 20, 5, 30, 7, 40, 9, 50, 60]<br>
+    </div>
+
+    <div id="q3">
+        <p>3. What Will Be The Output Of The Following Code Snippet?<br>
+            a=[1,2,3,4,5]<br>
+            print(a[3:0:-1]) </p>
+        <label for="3a"></label><input id = "3a" type="radio" name="Question1" value="a"> [4, 3]<br>
+        <label for="3b"></label><input id = "3b" type="radio" name="Question1" value="b"> [4, 3, 2]<br>
+        <label for="3c"></label><input id = "3c" type="radio" name="Question1" value="c"> [4, 3, 2, 1]<br>
+        <label for="3d"></label><input id = "3d" type="radio" name="Question1" value="d"> Syntax error<br>
+    </div>
+
+    <div id="q4">
+        <p > 4. What Will Be The Output Of The Following Code Snippet?<br>
+            def f(value, values):<br>
+            v = 1<br>
+            values[0] = 44<br>
+            t = 3<br>
+            v = [1, 2, 3]<br>
+            f(t, v)<br>
+            print(t, v[0]) </p>
+        <label for="4a"></label><input id = "4a" type="radio" name="Question4" value="a">1 44<br>
+        <label for="4b"></label><input id = "4b" type="radio" name="Question4" value="b">3 1<br>
+        <label for="4c"></label><input id = "4c" type="radio" name="Question4" value="c"> 3 44<br>
+        <label for="4d"></label><input id = "4d" type="radio" name="Question4" value="d">1 1<br>
+    </div>
+
+    <div id="q5">
+        <p>5. What Is The Correct Command To Shuffle The Following List?<br>
+            fruit=['apple', 'banana', 'papaya', 'cherry'] </p>
+        <label for="5a"></label><input id = "5a" type="radio" name="Question5" value=" a">  random.shuffleList(fruit)<br>
+        <label for="5b"></label><input id = "5b" type="radio" name="Question5" value=" b"> random.shuffle(fruit)<br>
+        <label for="5c"></label><input id = "5c" type="radio" name="Question5" value="c"> shuffle(fruit)<br>
+        <label for="5d"></label><input id = "5d" type="radio" name="Question5" value="d">fruit.shuffle()<br>
+    </div>
+
+    <div id="q6">
+        <p>6. data = [[[1, 2], [3, 4]], [[5, 6], [7, 8]]]<br>
+            def fun(m):]<br>
+            v = m[0][0]]<br>
+
+            for row in m:]<br>
+            for element in row:]<br>
+            if v < element: v = element]<br>
+
+            return v]<br>
+            print(fun(data[0])) </p>
+        <label for="6a"></label><input id = "6a" type="radio" name="Question6" value="a">1<br>
+        <label for="6b"></label><input id = "6b" type="radio" name="Question6" value="b">4<br>
+        <label for="6c"></label><input id = "6c" type="radio" name="Question6" value="c">2<br>
+        <label for="6d"></label><input id = "6d" type="radio" name="Question6" value="d">3<br>
+    </div>
+
+    <input id="button" type="button" value="I am finished" onclick="check()">
+
+</body>
+</html>
