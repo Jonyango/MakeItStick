@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <title>Programming 1</title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <link href="https://fonts.googleapis.com/css?family=Georgia" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<div class="header">
+<div class="header" style="display:flex;flex-direction: row;justify-content: flex-end">
     <!-- creating the navigation bar-->
-    <h1 id="logo">MakeItStick</h1>
-    <div class ="nav_bar">
+    <h1 id="logo" style="margin-right:auto">MakeItStick</h1>
+    <div class="nav_bar">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="programming1.html">Programming1</a></li>
@@ -19,19 +19,17 @@
             <li><a href="mathematicalfoundation.html">Mathematical Foundation</a></li>
             <li><a href="database.html">Database systems</a></li>
         </ul>
-
-
     </div>
     <!-- creating the navigation bar-->
 </div>
 
 
-<main>
-    <img src="./ass3images/python.jpg"  alt="Programming 1">
-</main>
-<div class="module_content">
+<div>
+    <img src="./ass3images/python.jpg"  alt="Programming 1 ">
+</div>
+<div class="module_content" >
 <h1>Overview</h1>
-<div id="python_overview">
+<div id="python_overview" >
     <h2>About this Module</h2>
 
     <p>This module is about testing your understanding of the fundamentals of programming using Python.
@@ -56,13 +54,13 @@
     </div>
     <div class="quiz_links" >
         <table>
-            <tr><th>TOPICS COVERED</th> <th>QUIZZES</th></tr>
+            <tr><th>Topics covered</th> <th>Quizzes</th></tr>
             <tr>
-                <td>STRINGS</td>
+                <td>String</td>
                 <td ><a class="quiz-link" href="prog1quiz1.html" >QUIZ</a></td>
             </tr>
             <tr>
-                <td>LISTS</td>
+                <td>Lists</td>
                 <td><a class="quiz-link" href="prog1quiz2.html" >QUIZ</a></td>
             </tr>
             <tr>
@@ -70,11 +68,11 @@
                 <td>QUIZ</td>
             </tr>
             <tr>
-                <td>FUNCTIONS AND LOOPS</td>
+                <td>Function and loops</td>
                 <td>QUIZ</td>
             </tr>
             <tr>
-                <td>BASIC DATA STRUCTURES</td>
+                <td>Basic data structures</td>
                 <td>QUIZ</td>
             </tr>
 
@@ -87,28 +85,32 @@
 
 <footer>
 
-    <div>
-        <h4>Contact us  if you have any questions</h4>
+    <div class="Ola-classe">
+
         <form><strong>
+            <h4>Contact us  if you have any questions</h4>
 
             <label for="name">Name:</label>
-            <input type="text" id="name" name="user_name" value="Please enter your name" required><br><br>
+            <input type="text" id="name" name="user_name" placeholder="Please enter your name" required><br><br>
 
 
             <label for="email">E-mail:</label>
-            <input type="email" id="email" name="user_mail" value="Enter your email" required><br><br>
+            <input type="email" id="email" name="user_mail" placeholder="Enter your email" required><br><br>
 
 
 
             <label for="msg">Message:</label>
-            <textarea id="msg" name="user_message" value="Type your message"  minlength="300" maxlength="2500"></textarea>
-
-            <input type="submit" value="Send"></strong>
+            <textarea id="msg" name="user_message" placeholder="Type your message"  minlength="300" maxlength="2500"></textarea>
+            <br>
+            <button type="submit">SEND</button>
+        </strong>
         </form>
 
     </div>
-    <p>&copy;2019 MakeItStick.com</p>
+
     <div class = "footer_list">
+        <p>&copy;2019 MakeItStick.com</p>
+        <div id="footer-list">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="programming1.html">Programming1</a></li>
@@ -116,7 +118,7 @@
             <li><a href="mathematicalfoundation.html">Mathematical Foundation</a></li>
             <li><a href="database.html">Database systems</a></li>
         </ul>
-
+        </div>
     </div>
 </footer>
 

@@ -1,44 +1,42 @@
 *{
     box-sizing:border-box;
-    font-family: 'Georgia', serif;
+    font-family: 'Lato', serif;
+    font-size: 1.0rem;
 }
-body{
-    padding:0;
-    margin:0;
-}
+
 .header{
-    background-color:ghostwhite;
-    padding:20px;
+    background-color:#061016;
+    padding:30px;
     margin:0;
+
 }
+
 .nav_bar{
     width:100%;
     position:relative;
     top:0;
+    left:20%;
 }
 
-/*.nav_bar ul{*/
-    /*background-color: #021c1e;*/
-/*}*/
 #logo{
     font-family: serif;
-    font-size: 25px;
+    font-size: 22px;
     float: left;
-    color:black;
+    color:#F2C94C;
     margin:0;
     font-style: italic;
 }
 .nav_bar li{
-    color:#021c1e;
-    float: left;
+    color:#F2C94C;
     list-style-type: none;
     display:inline;
-    padding: 0 20px;
+    padding-left:  20px;
     margin:0;
+    align-items: flex-end;
 }
 .nav_bar a{
     text-decoration: none;
-    color:black;
+    color:#F2C94C;
     font-size: 20px;
     margin:0;
     position:relative;
@@ -49,7 +47,7 @@ body{
     text-align: center;
     margin: auto;
     background-color: #004445;
-    color:white;
+    color:#F6FFFB;
     font-size: 30px;
 }
 
@@ -58,12 +56,12 @@ body{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color:yellow;
+    color:#F6FFFB;
     font-size: 40px;
     font-style: italic;
 }
 body{
-    background-color: white;
+    background-color: #F6FFFB;
     padding:0;
     margin:0;
 }
@@ -76,21 +74,145 @@ body{
 img{
     height: 100%;
     width: 100%;
-    object-fit: cover;
+    /*object-fit: cover;*/
+    margin:0;
 
 }
+
 
 /* Clear floats after the columns */
 
 .module_overview{
-    display:flex;
-    flex-direction: row;
+    display:grid;
+    grid-template-columns: 50% 50%;
     margin: auto;
     width: fit-content;
 }
 #topics{
-    padding: 0 2vw;
+    padding: 2vw 0;
+    background-color: grey;
+    width:398px;
+
 }
 .quiz_links{
-    padding: 0 2vw;
+    padding: 2vw 0;
+    background-color: grey;
+
+}
+
+/*styling the footer and it's link*/
+.footer_list p{
+    float: left;
+    font-style: inherit;
+    font-size: 1.0rem;
+}
+.footer_list li{
+    float: left;
+    display:inline;
+    list-style-type: none;
+    padding: 0 20px;
+}
+.footer_list a{
+    text-decoration: none;
+    color:black;
+    font-size: 1.0rem;
+    margin:0;
+    position:relative;
+    top:0;
+}
+.footer_list{
+    padding:40px;
+    margin:0;
+    background-color: #F2C94C;
+
+
+}
+
+#footer-list{
+    position:relative;
+    left:20px;
+}
+
+.module_content h1{
+    text-align: center;
+    background-color:#061016 ;
+    color:#F2C94C;
+    padding-top:20px;
+    margin:0;
+}
+.module_content h2{
+    text-align: center;
+    background-color:#F6FFFB;
+    color:#F2C94C;
+    padding:10px;
+    margin:0;
+
+}
+#discrete_overview,#python_overview,#database_overview,#mfc_overview{
+    background-color: #061016;
+    text-align: center;
+    color:white;
+    font-size: 1.0rem;
+    padding:50px;
+}
+
+/* styling the form and its contents*/
+form{
+    background-color: #061016;
+    align-content: center;
+    padding:15px;
+    box-sizing: border-box;
+    position: relative;
+    margin:0 auto;
+
+}
+
+
+button,input{
+
+    color: black;
+    margin:10px;
+    padding:10px;
+    font-style: inherit;
+
+
+
+
+}
+label,h4{
+    color: #F6FFFB;
+    margin:15px;
+    padding:20px;
+    font-style: inherit;
+}
+textarea{
+    vertical-align:top;
+    color: black;
+    margin:10px;
+    padding:10px;
+    font-style: inherit;
+    box-sizing: inherit;
+
+}
+
+/* styling the quiz link class.
+
+ */
+table{
+    table-layout: fixed;
+    border-collapse: collapse;
+
+    width:50%;
+    float:right;
+    vertical-align: center;
+}
+.Ola-classe{
+    /*margin: 0 auto;*/
+    width:100%;
+    display: flex;
+    background: #061016;
+}
+button{
+    width: 180px;
+    align-self: center;
 }
