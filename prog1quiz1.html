@@ -8,34 +8,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<div class ="nav_bar">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="programming1.html">Programming1</a></li>
-        <li><a href="discreteMathematics.html">Discrete Mathematics</a></li>
-        <li><a href="mathematicalfoundation.html">Mathematical Foundation</a></li>
-        <li><a href="database.html">Database systems</a></li>
-    </ul>
+<div class="header">
+    <!-- creating the navigation bar-->
+    <h1 id="logo">MakeItStick</h1>
+    <div class ="nav_bar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="programming1.html">Programming1</a></li>
+            <li><a href="discreteMathematics.html">Discrete Mathematics</a></li>
+            <li><a href="mathematicalfoundation.html">Mathematical Foundation</a></li>
+            <li><a href="database.html">Database systems</a></li>
+        </ul>
 
 
+    </div>
 </div>
+<div id="totalPercentage_score"></div>
 <!--creating the programming quiz -->
-<h1 class="text" >STRINGS : QUIZ 1</h1>
-<form id="quiz" name="Strings">
+<h1 class="text"  style="text-align: center; padding: 10px;" >STRINGS : QUIZ 1</h1>
+<div class="formQuiz_container" style="display:flex;justify-content: center">
+
+<div id="quiz" name="Strings">
     <div id="q1">
         <p>1. In Python, a tuple is a sequence of values that can't be changed after it is defined. </p>
-        <label for="text_box1"></label><input id = "text_box1" type="radio" name="Question1" value="true">True<br>
-        <label for="text_box2"></label><input id = "text_box2" type="radio" name="Question1" value="false">False<br>
-        <label for="text_box3"></label><input id = "text_box3" type="radio" name="Question1" value="I don't know">I don't know<br>
-        <label for="text_box"></label><input id = "text_box" type="radio"    name="Question1" value="I don't care">I don't care<br>
+        <label for="text_box1"></label><input id = "text_box1" type="radio" name="Question1" value="a">True<br>
+        <label for="text_box2"></label><input id = "text_box2" type="radio" name="Question1" value="b">False<br>
+        <label for="text_box3"></label><input id = "text_box3" type="radio" name="Question1" value="c">I don't know<br>
+        <label for="text_box"></label><input id = "text_box" type="radio"    name="Question1" value="d">I don't care<br>
     </div>
 
     <div id="q2">
         <p>2. Which of the following function converts a string into a float </p>
-        <label for="2a"></label><input id = "2a" type="radio" name="Question1" value="true">True<br>
-        <label for="2b"></label><input id = "2b" type="radio" name="Question1" value="false">False<br>
-        <label for="2c"></label><input id = "2c" type="radio" name="Question1" value="I don't know">I don't know<br>
-        <label for="2d"></label><input id = "2d" type="radio" name="Question1" value="I don't care">I don't care<br>
+        <label for="2a"></label><input id = "2a" type="radio" name="Question2" value="a">True<br>
+        <label for="2b"></label><input id = "2b" type="radio" name="Question2" value="b">False<br>
+        <label for="2c"></label><input id = "2c" type="radio" name="Question2" value="c">I don't know<br>
+        <label for="2d"></label><input id = "2d" type="radio" name="Question2" value="d">I don't care<br>
     </div>
 
     <div id="q3">
@@ -43,38 +50,41 @@
 
             s='cppbuzz chicago'
             print(s[3:5]) </p>
-        <label for="3a"></label><input id = "3a" type="radio" name="Question1" value="pbuzz">pbuzz<br>
-        <label for="3b"></label><input id = "3b" type="radio" name="Question1" value="buzzc">buzzc<br>
-        <label for="3c"></label><input id = "3c" type="radio" name="Question1" value="bu">bu<br>
-        <label for="3d"></label><input id = "3d" type="radio" name="Question1" value="None of these">None of these<br>
+        <label for="3a"></label><input id = "3a" type="radio" name="Question3" value="a">pbuzz<br>
+        <label for="3b"></label><input id = "3b" type="radio" name="Question3" value="b">buzzc<br>
+        <label for="3c"></label><input id = "3c" type="radio" name="Question3" value="c">bu<br>
+        <label for="3d"></label><input id = "3d" type="radio" name="Question3" value="d">None of these<br>
     </div>
 
     <div id="q4">
         <p > 4. Which predefined Python function is used to find length of string? </p>
-        <label for="4a"></label><input id = "4a" type="radio" name="Question4" value="length()">True<br>
-        <label for="4b"></label><input id = "4b" type="radio" name="Question4" value="len()">len()<br>
-        <label for="4c"></label><input id = "4c" type="radio" name="Question4" value="strlen()">strlen()<br>
-        <label for="4d"></label><input id = "4d" type="radio" name="Question4" value="stringlength()">stringlength()<br>
+        <label for="4a"></label><input id = "4a" type="radio" name="Question4" value="a">length()<br>
+        <label for="4b"></label><input id = "4b" type="radio" name="Question4" value="b">len()<br>
+        <label for="4c"></label><input id = "4c" type="radio" name="Question4" value="c">strlen()<br>
+        <label for="4d"></label><input id = "4d" type="radio" name="Question4" value="d">stringlength()<br>
     </div>
 
     <div id="q5">
         <p>5. Which of the following is correct way to declare string variable in Python? </p>
-        <label for="5a"></label><input id = "5a" type="radio" name="Question5" value=" fruit = 'banana'"> fruit = 'banana'<br>
-        <label for="5b"></label><input id = "5b" type="radio" name="Question5" value=" fruit2 "> fruit = "banana"<br>
-        <label for="5c"></label><input id = "5c" type="radio" name="Question5" value="fruit = banana">fruit = banana<br>
-        <label for="5d"></label><input id = "5d" type="radio" name="Question5" value="fruit = (banana)">fruit = (banana)<br>
+        <label for="5a"></label><input id = "5a" type="radio" name="Question5" value="a"> fruit = 'banana'<br>
+        <label for="5b"></label><input id = "5b" type="radio" name="Question5" value="b"> fruit = "banana"<br>
+        <label for="5c"></label><input id = "5c" type="radio" name="Question5" value="c">fruit = banana<br>
+        <label for="5d"></label><input id = "5d" type="radio" name="Question5" value="d">fruit = (banana)<br>
     </div>
 
     <div id="q6">
         <p>6. What is the output for − 'python ' [-3]? </p>
-        <label for="6a"></label><input id = "6a" type="radio" name="Question6" value="t">t<br>
-        <label for="6b"></label><input id = "6b" type="radio" name="Question6" value="Negative index error">Negative index error<br>
-        <label for="6c"></label><input id = "6c" type="radio" name="Question6" value="o">o<br>
-        <label for="6d"></label><input id = "6d" type="radio" name="Question6" value="h">h<br>
+        <label for="6a"></label><input id = "6a" type="radio" name="Question6" value="a">t<br>
+        <label for="6b"></label><input id = "6b" type="radio" name="Question6" value="b">Negative index error<br>
+        <label for="6c"></label><input id = "6c" type="radio" name="Question6" value="c">o<br>
+        <label for="6d"></label><input id = "6d" type="radio" name="Question6" value="d">h<br>
     </div>
+ <div style="display:flex; width:100%;justify-content: center">
+    <input id="button" type="button" value="I have finished" onclick ="computeScore()"><br>
+ </div>
 
-    <input id="button" type="button" value="I am finished" onclick="check()">
-
-</form>
+</div>
+</div>
+<script src="main.js"></script>
 </body>
 </html>

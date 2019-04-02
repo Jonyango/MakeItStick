@@ -148,6 +148,9 @@ img{
     margin:0;
 
 }
+.module_overview{
+    background-color: grey;
+}
 #discrete_overview,#python_overview,#database_overview,#mfc_overview{
     background-color: #061016;
     text-align: center;
@@ -211,6 +214,7 @@ table{
     width:100%;
     display: flex;
     background: #061016;
+    text-align: left;
 }
 button{
     width: 180px;

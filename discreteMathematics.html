@@ -26,8 +26,7 @@
 </div>
 
 
-</body>
-</html>
+
 <!--<main>-->
     <img src="./ass3images/ds.jpeg"  alt="Discrete mathematics" >
     <p class="message"> DISCRETE   MATHEMATICS. TEACHING THE  ART
@@ -88,11 +87,12 @@
 </div>
 
 </div>
-<footer>
 
+<footer>
+    <div id="reply-message" ></div>
     <div class="Ola-classe">
 
-        <form><strong>
+        <form id="commentForm" style="display:flex;justify-content: center"><strong>
             <h4>Contact us  if you have any questions</h4>
 
             <label for="name">Name:</label>
@@ -105,9 +105,9 @@
 
 
             <label for="msg">Message:</label>
-            <textarea id="msg" name="user_message" placeholder="Type your message"  minlength="300" maxlength="2500"></textarea>
+            <textarea id="msg" name="user_message" placeholder="Type your message"  minlength="1" maxlength="2500"></textarea>
             <br>
-            <button type="submit">SEND</button>
+            <button type="button" id="submit-button">SEND</button>
         </strong>
         </form>
 
@@ -124,4 +124,8 @@
         </ul>
 
     </div>
+
 </footer>
+<script src="main.js"></script>
+</body>
+</html>

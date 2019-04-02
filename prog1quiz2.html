@@ -8,10 +8,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+<div class="header">
+    <!-- creating the navigation bar-->
+    <h1 id="logo">MakeItStick</h1>
+    <div class ="nav_bar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="programming1.html">Programming1</a></li>
+            <li><a href="discreteMathematics.html">Discrete Mathematics</a></li>
+            <li><a href="mathematicalfoundation.html">Mathematical Foundation</a></li>
+            <li><a href="database.html">Database systems</a></li>
+        </ul>
+
+
+    </div>
+</div>
 
 <!--creating the programming quiz 2 -->
-<h1 class="text" >LISTS : QUIZ 2</h1>
-<form id="quiz" name="Strings">
+<h1 class="text" style="text-align: center; padding: 10px;">LISTS : QUIZ 2</h1>
+<div class="formQuiz_container" style="display:flex;justify-content: center">
+
+<div id="quiz" name="Lists">
     <div id="q1">
         <p>1. What Will Be The Output Of The Following Code Snippet?<br>a=[1,2,3,4,5,6,7,8,9]]<br>
             print(a[::2]) </p>
@@ -82,8 +99,10 @@
         <label for="6c"></label><input id = "6c" type="radio" name="Question6" value="c">2<br>
         <label for="6d"></label><input id = "6d" type="radio" name="Question6" value="d">3<br>
     </div>
-
+    <div style="display:flex; width:100%;justify-content: center">
     <input id="button" type="button" value="I am finished" onclick="check()">
-
+    </div>
+</div>
+</div>
 </body>
 </html>

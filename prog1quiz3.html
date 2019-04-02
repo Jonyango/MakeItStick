@@ -1,10 +1,126 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:align-items="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
     <title>Programming 1 qn3</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+<div class="header">
+    <!-- creating the navigation bar-->
+    <h1 id="logo">MakeItStick</h1>
+    <div class ="nav_bar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="programming1.html">Programming1</a></li>
+            <li><a href="discreteMathematics.html">Discrete Mathematics</a></li>
+            <li><a href="mathematicalfoundation.html">Mathematical Foundation</a></li>
+            <li><a href="database.html">Database systems</a></li>
+        </ul>
 
+
+    </div>
+</div>
+
+<h1 class="text" style="text-align:center">Object Oriented programming : QUIZ </h1>
+<div class="formQuiz_container" style="display:flex;justify-content: center">
+
+    <div class="quiz-form" id="prog1quiz3">   <!--this div contains the six questions-->
+        <div id="q1oopSelect" class="quiz-div">
+            1.	_____ represents an entity in the real world with its identity and behaviour.<br/>
+            <label for="q1oopSelect"></label><select type="text" id="q3Select" name="q1oopSelect" style="height:30px;width:200px;">
+                <option name="q1oopSelect" value="a">Inheritance</option>
+                <option name="q1oopSelect" value="b">A class</option>
+                <option name="q1oopSelect" value="c">A method</option>
+                <option name="q1oopSelect" value="d">An Object</option>
+            </select>
+            <br><br>
+        </div>
+            <div id="q2oop" class="quiz-div" style="align-items:center ">
+                2.	What is the output of the following code?<br>
+
+                class test:<br>
+                def __init__(self,a="Hello World"):<br>
+                self.a=a<br>
+                <br>
+                def display(self):<br>
+                print(self.a)<BR>
+                obj=test()<BR>
+                obj.display() ?<br/>
+                <label for="q2oop"></label><select type="text" id="q2Select" name="qq1oopSelect" style="height:30px;width:200px;">
+                <option name="q1oopSelect" value="a">The program has an error because constructor can’t have default arguments</option>
+                <option name="q1oopSelect" value="b">Nothing is displayed</option>
+                <option name="q1oopSelect" value="c">“Hello World” is displayed</option>
+                <option name="q1oopSelect" value="d">The program has an error display function doesn’t have parameters</option>
+            </select>
+
+            </div><br><br>
+            <div id ='q3oop' class="quiz-div" style="align-items:center">
+                3. Is the following piece of code correct?
+
+                >>> class A:<br>
+                def __init__(self,b):<br>
+                self.b=b<br>
+                def display(self):<br>
+                print(self.b)<br>
+                >>> obj=A("Hello")<br>
+                >>> del obj<br>
+            Answer: <input type="text" name="q300p" id="q3o" placeholder="Your answer goes here" required>
+            </div><br><br>
+
+            <div id ='q4oop' class="quiz-div" style="align-items:center">
+                4. What is the output of the following code?
+
+                class fruits:<br>
+                def __init__(self, price):<br>
+                self.price = price<br>
+                obj=fruits(50)<br>
+                <br>
+                obj.quantity=10<br>
+                obj.bags=2<br>
+                <br>
+                print(obj.quantity+len(obj.__dict__))<br>
+                Answer: <input type="text" name="q400p" id="q4o" placeholder="Your answer goes here" required>
+            </div><br><br>
+            <div id="q5oop" class="quiz_div" style="align-items: center">
+                5.  Which member can never be accessed by inherited classes?
+                <label>
+                    <input type="checkbox" name="oop" value="a" required>
+                </label> Private member function
+                <label>
+                    <input type="checkbox" name="oop" value="b">
+                </label> Public member function
+
+                <label>
+                    <input type="checkbox" name="oop" value="c">
+                </label> Protected member function
+                <label>
+                    <input type="checkbox" name="oop" value="d">
+                </label> All can be accessed
+            </div>
+             <br><br>
+            <div id="q6oop" class="quiz_div" style="align-items: center">
+                6.  A private function of a derived class can be accessed by the parent class.
+                <label>
+                    <input type="checkbox" name="oop" value="a" required>
+                </label> True.
+                <label>
+                    <input type="checkbox" name="oop" value="b">
+                </label> False.
+
+
+            </div>
+            <div style="display:flex; width:100%;justify-content: center">
+                <button id="q1submit_oop" onclick="quiz3()" class="view-button " style="width:200px">Submit Answers</button><br/>
+
+            </div>
+
+
+
+</div>
+
+</div>
 </body>
 </html>
